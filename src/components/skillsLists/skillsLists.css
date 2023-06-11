@@ -1,4 +1,4 @@
-.pl {
+.skl {
   padding: 50px 100px;
   display: flex;
   flex-direction: column;
@@ -7,15 +7,15 @@
   text-align: center;
 }
 
-.pl-texts {
+.skl-texts {
   width: 65%;
 }
 
-.pl-desc {
+.skl-desc {
   margin: 20px 0px;
 }
 
-.pl-list {
+.skl-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -23,14 +23,14 @@
 }
 
 @media screen and (max-width: 480px) {
-  .pl {
+  .skl {
     padding: 10px;
   }
 
-  .pl-texts {
+  .skl-texts {
     width: 100%;
   }
-  .pl-desc {
+  .skl-desc {
     display: none;
   }
 }

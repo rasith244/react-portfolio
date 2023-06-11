@@ -1,9 +1,10 @@
 import React from "react";
+import { scrollToComponent } from "../../utils";
 import "./about.css";
 
 const About = () => {
   return (
-    <div className="a">
+    <div id={scrollToComponent["About"]} className="a">
       <div className="a-left">
         <div className="a-card bg"></div>
         <div className="a-card">

@@ -1,4 +1,4 @@
-.p {
+.sk {
   width: 30%;
   height: 40vh;
   margin: 20px 10px;
@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.p-browser {
+.sk-browser {
   height: 20px;
   background-color: rgb(243, 242, 242);
   display: flex;
@@ -16,26 +16,41 @@
   z-index: 2;
 }
 
-.p-circle {
+.sk-circle {
   width: 6px;
   height: 6px;
   margin: 3px;
-  background-color: white;
   border-radius: 50%;
 }
 
-.p-img {
+.sk-circle:nth-of-type(1) {
+  background-color: dodgerblue;
+}
+
+.sk-circle:nth-of-type(2) {
+  background-color: tomato;
+}
+
+.sk-circle:nth-of-type(3) {
+  background-color: orchid;
+}
+
+.sk-img {
   width: 100%;
   transition: all 2s ease;
 }
 
-.p:hover .p-img {
+.sk:hover .sk-img {
   transform: translateY(-100%);
 }
 
 @media screen and (max-width: 480px) {
-  .p {
+  .sk {
     width: 40%;
-    height: 20vh;
+    height: 21vh;
+  }
+  .sk-img {
+    max-height: 12vh;
+    transform: translateY(20px);
   }
 }

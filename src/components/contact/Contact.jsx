@@ -1,10 +1,8 @@
 import React, { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Phone from "../../Img/phone.png";
-import Email from "../../Img/email.png";
-import Address from "../../Img/address.png";
 import "./contact.css";
 import { ThemeContext } from "../../context";
+import { scrollToComponent } from "../../utils";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -36,30 +34,29 @@ const Contact = () => {
   };
 
   return (
-    <div className="c">
+    <div id={scrollToComponent["Contact"]} className="c">
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
-          <h1 className="c-title">Let's discuss your project</h1>
+          <h1 className="c-title">Get In Touch</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
+              <img src="src/Img/others/phone.png" alt="" className="c-icon" />
               9787694112
             </div>
             <div className="c-info-item">
-              <img src={Email} alt="" className="c-icon" />
+              <img src="src/Img/others/email.png" alt="" className="c-icon" />
               contact@rasithFaaz.dev
             </div>
             <div className="c-info-item">
-              <img src={Address} alt="" className="c-icon" />
+              <img src="src/Img/others/address.png" alt="" className="c-icon" />
               M-174, TNHB Colony, Tenkasi-627811.
             </div>
           </div>
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <b>What's your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along. me.
+            <b>What's your story?</b> Get in touch. Always available.
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit}>

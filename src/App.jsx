@@ -1,9 +1,10 @@
 import { useContext } from "react";
-import About from "./components/about/about";
-import Contact from "./components/contact/Contact";
-import Intro from "./components/intro/Intro";
-import ProductList from "./components/productList/ProductList";
+import HeaderMenu from "./components/header/HeaderMenu";
 import Toggle from "./components/toggle/Toggle";
+import Intro from "./components/intro/Intro";
+import About from "./components/about/about";
+import SkillsLists from "./components/skillsLists/SkillsLists";
+import Contact from "./components/contact/Contact";
 import { ThemeContext } from "./context";
 
 const App = () => {
@@ -17,10 +18,11 @@ const App = () => {
         color: darkMode && "#fff",
       }}
     >
+      <HeaderMenu />
       <Toggle />
       <Intro />
       <About />
-      <ProductList />
+      <SkillsLists />
       <Contact />
     </div>
   );

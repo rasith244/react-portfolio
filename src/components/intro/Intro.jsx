@@ -1,19 +1,19 @@
 import React from "react";
 import "./intro.css";
-import Me from "../../Img/me.png";
+import { scrollToComponent } from "../../utils";
 
 const Intro = () => {
   return (
-    <div className="i">
+    <div id={scrollToComponent["Intro"]} className="i">
       <div className="i-left">
         <div className="i-left-wrapper">
-          <h2 className="i-intro">Hello, my name is</h2>
+          <h2 className="i-intro">Hello, I'm</h2>
           <h1 className="i-name">Mohammed Rasith</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">UI/UX Desinger</div>
-              <div className="i-title-item">Photographer</div>
+              <div className="i-title-item">Frontend Developer</div>
+              <div className="i-title-item">Enthusiastic Larner</div>
+              <div className="i-title-item">Problem Solver</div>
             </div>
           </div>
           <p className="i-desc">
@@ -81,7 +81,7 @@ const Intro = () => {
       </div>
       <div className="i-right">
         <div className="i-bg">
-          <img src={Me} alt="" className="i-img" />
+          <img src="src/Img/others/me.png" alt="" className="i-img" />
         </div>
       </div>
     </div>
